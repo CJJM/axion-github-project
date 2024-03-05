@@ -1,30 +1,29 @@
-# React + TypeScript + Vite
+# Axion Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technical Choices
 
-Currently, two official plugins are available:
+- Minimal dependencies, focus on best practices using Octokit, SCSS, Jest, Typescript
+- Prettier for consistent readability
+- Styling using Semantic HTML and minimal classNames
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Application Choices
 
-## Expanding the ESLint configuration
+- Support for either organization or username signin (if they are authorized by Github)
+- Support for pagination, sorting, and filtering (simplified pagination controls)
+- Repositories in tabular format with styling using CSS Transitions to increase immersion
+- Inclusion of Avatar images for increased feedback to user
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Running the Application
 
-- Configure the top-level `parserOptions` property like this:
+- Runs like typical Vite application
+- Pull repo, enter directory, then:
+  - `npm install`
+  - `npm run dev`
+- Can log into any valid organization or username, and the password is `password`
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Features to Implement
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Increased error handling
+- Details page for repository user clicks on
+- Integrating more Github APIs
+- Increased styling to mimic Axion Ray themes
