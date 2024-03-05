@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 1rem;
+}
+
+.login {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    place-items: center;
+
+    form {
+        padding: 1rem;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+        width: 300px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+
+    h2, label, button {
+        margin: 0.5rem 0;
+    }
+
+    label {
+        display: block;
+
+        span {
+            display: inline-block;
+            width: 100px;
+        }
+    }
+}
+
+.landing {
+    .welcome-container {
+        span, input {
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        hr {
+            border: 0.5px solid lightgray;
+            margin: 1rem 0;
+        }
+    }
+
+    .repository {
+        padding: 0.5rem;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        margin: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0;
+        background-color: white;
+        transition: box-shadow 0.5s;
+
+        .repo-info, .repo-owner {
+            display: inline-block;
+        }
+
+        .repo-owner {
+            flex-direction: column;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .name, .description, .url {
+            margin: 0.5rem;
+        }
+    }
+
+    .repository:hover {
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        background-color: rgb(244, 244, 244);
+        transition: background-color 0.2s linear;
+    }
+
+    .field-label {
+        display: inline-block;
+        font-weight: 600;
+        width: 100px;
+    }
+
+    img {
+        height: 32px;
+        width: 32px;
+    }
+}
